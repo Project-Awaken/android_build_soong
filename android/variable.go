@@ -135,7 +135,7 @@ type variableProperties struct {
 		} `android:"arch_variant"`
 
 		// include Awaken variables
- 		*android.Product_variables
+		Awaken android.Product_variables
 
 	} `android:"arch_variant"`
 }
@@ -344,7 +344,7 @@ type productVariables struct {
 	BoardUsesRecoveryAsBoot *bool `json:",omitempty"`
 
 	// include Awaken variables
- 	*android.ProductVariables
+	Awaken android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
